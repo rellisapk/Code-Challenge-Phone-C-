@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+string OldPhonePad(string messages) {
+    string result = "";
+    string keys[] = {" ", " ", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
+    
+    char lastChar = ' ';
+    int count = 0;
+
+    for (int i = 0; i < messages.length(); i++) {
+        char item = messages[i];
+
+        if (item == '#') break;  // End of input
+        if (item == '*') {  
+            if (!result.empty()) result.pop_back(); // Remove last character
+            continue;
+        }
+
+        if (item == lastChar) {
+            count++;  // Count repeated presses
+        } else {
+            if (lastChar != ' ' && lastChar >= '0' && lastChar <= '9') {
+                int index = lastChar - '0';
+                int pos = (count - 1) % keys[index].size();
+                result += keys[index][pos]; // Pick letter
+            }
+            lastChar = item;
+            count = 1;
+        }
+    }
+
+    if (lastChar != ' ' && lastChar >= '0' && lastChar <= '9') {
+        int index = lastChar - '0';
+        int pos = (count - 1) % keys[index].size();
+        result += keys[index][pos];
+    }
+
+    return result;
+}
+
+int main() {
+    cout << OldPhonePad("33#") << endl;               // Output: E
+    cout << OldPhonePad("227#") << endl;              // Output: B
+    cout << OldPhonePad("4433555 555666#") << endl;   // Output: HELLO
+    cout << OldPhonePad("8 88777444666*664#") << endl; // Output: TURNG
+}
