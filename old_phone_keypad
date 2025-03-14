@@ -1,47 +1,40 @@
-#include <iostream>
-using namespace std;
+#include "old_phone_pad.h"
 
-string OldPhonePad(string messages) {
-    string result = "";
-    string keys[] = {" ", " ", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
-    
+std::string OldPhonePad(std::string messages) {
+    std::string result = "";  
+    std::string keys[] = {" ", " ", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
+
     char lastChar = ' ';
     int count = 0;
 
     for (int i = 0; i < messages.length(); i++) {
         char item = messages[i];
 
-        if (item == '#') break;  // End of input
+        if (item == '#') break;  // If found # then stop
         if (item == '*') {  
-            if (!result.empty()) result.pop_back(); // Remove last character
+            if (!result.empty()) result.pop_back(); // Delete the last char if contains *
             continue;
         }
 
         if (item == lastChar) {
-            count++;  // Count repeated presses
+            count++;  // Important things, to count the keypad touch
         } else {
-            if (lastChar != ' ' && lastChar >= '0' && lastChar <= '9') {
+            if (lastChar >= '0' && lastChar <= '9') {
                 int index = lastChar - '0';
                 int pos = (count - 1) % keys[index].size();
-                result += keys[index][pos]; // Pick letter
+                result += keys[index][pos]; // Get letter
             }
             lastChar = item;
             count = 1;
         }
     }
 
-    if (lastChar != ' ' && lastChar >= '0' && lastChar <= '9') {
+    // Add the last char
+    if (lastChar >= '0' && lastChar <= '9') {
         int index = lastChar - '0';
         int pos = (count - 1) % keys[index].size();
         result += keys[index][pos];
     }
 
     return result;
-}
-
-int main() {
-    cout << OldPhonePad("33#") << endl;               // Output: E
-    cout << OldPhonePad("227#") << endl;              // Output: B
-    cout << OldPhonePad("4433555 555666#") << endl;   // Output: HELLO
-    cout << OldPhonePad("8 88777444666*664#") << endl; // Output: TURNG
 }
