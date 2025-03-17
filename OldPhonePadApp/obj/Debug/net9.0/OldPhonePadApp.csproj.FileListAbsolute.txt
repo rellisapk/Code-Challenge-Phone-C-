@@ -1,0 +1,15 @@
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\bin\Debug\net9.0\OldPhonePadApp.exe
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\bin\Debug\net9.0\OldPhonePadApp.deps.json
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\bin\Debug\net9.0\OldPhonePadApp.runtimeconfig.json
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\bin\Debug\net9.0\OldPhonePadApp.dll
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\bin\Debug\net9.0\OldPhonePadApp.pdb
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.GeneratedMSBuildEditorConfig.editorconfig
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.AssemblyInfoInputs.cache
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.AssemblyInfo.cs
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.csproj.CoreCompileInputs.cache
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.sourcelink.json
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.dll
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\refint\OldPhonePadApp.dll
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.pdb
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\OldPhonePadApp.genruntimeconfig.cache
+f:\Thailand Opportunities\Code-Challenge-Phone-C-\OldPhonePadApp\obj\Debug\net9.0\ref\OldPhonePadApp.dll
